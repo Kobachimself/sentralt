@@ -1,51 +1,51 @@
 body {
-    background-color: #000; /* Mørkt bakgrunnsfarge */
+    background-image: url('https://cdn.discordapp.com/attachments/1155911389605540012/1156663497833336913/R_2.jpg?ex=6515ca53&is=651478d3&hm=e5e772396e810123312c6a33a645dbff5b87196cb76766d233862fb0de14cdcc&');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     margin: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white; /* Hvit tekstfarge */
+    color: white;
 }
 
 .container {
     display: inline-block;
     padding: 20px;
-    border: 2px solid #333; /* Mørkegrå ramme */
-    border-radius: 10px; /* Avrundede kanter */
-    transition: box-shadow 0.3s ease; /* Overgang for glød-effekten */
+    border: 2px solid #333;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
     margin-bottom: 20px;
 }
 
 .container:hover {
-    box-shadow: 0 0 10px pink; /* Glød-effekt når musepekeren er over */
+    box-shadow: 0 0 10px pink;
 }
 
 .glow-text {
     font-size: 36px;
-    color: pink; /* Rosa tekstfarge */
+    color: pink;
 }
 
 .footer {
     text-align: center;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
+    margin: 10px 0;
 }
 
-.footer ul {
+.footer ul.social-media {
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
-.footer li {
-    margin-bottom: 10px;
+.footer ul.social-media li {
+    margin-right: 10px;
 }
 
-.footer li a img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-left: 5px;
+.footer ul.social-media li:last-child {
+    margin-right: 0;
 }
