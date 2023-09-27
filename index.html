@@ -3,24 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Sentralt's Community</title>
+    <style>
+        body {
+            background-color: #000; /* Mørkt bakgrunnsfarge */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Hvit tekstfarge */
+        }
+
+        .container {
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid #333; /* Mørkegrå ramme */
+            border-radius: 10px; /* Avrundede kanter */
+            transition: box-shadow 0.3s ease; /* Overgang for glød-effekten */
+            margin-bottom: 20px;
+        }
+
+        .container:hover {
+            box-shadow: 0 0 10px pink; /* Glød-effekt når musepekeren er over */
+        }
+
+        .glow-text {
+            font-size: 36px;
+            color: pink; /* Rosa tekstfarge */
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer li {
+            margin-bottom: 10px;
+        }
+
+        .footer li a img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    </style>
+    <title>Din Nettside</title>
 </head>
 <body>
-<div class="header">
-    <h1>Sentralt's Community</h1>
+<div class="container" id="glow-container">
+    <span class="glow-text">Check Out More</span>
+</div>
+
+<div class="footer">
     <p>Powered By Sentralt</p>
     <p>Contact here: <a href="mailto:sentraltyt@gmail.com">sentraltyt@gmail.com</a></p>
     <p>Sosiale medier:</p>
     <ul>
-        <li><a href="https://twitter.com/ytsentralt" target="_blank">Twitter</a></li>
-        <li><a href="https://www.twitch.tv/ytsentralt" target="_blank">Twitch</a></li>
-        <li><a href="https://www.youtube.com/@sentralt" target="_blank">YouTube</a></li>
-        <li><a href="https://www.facebook.com/profile/ytsentralt" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/ytsentralt" target="_blank">Twitter <img src="icons/twitter.png" alt="Twitter Icon"></a></li>
+        <li><a href="https://www.twitch.tv/ytsentralt" target="_blank">Twitch <img src="icons/twitch.png" alt="Twitch Icon"></a></li>
+        <li><a href="https://www.youtube.com/@sentralt" target="_blank">YouTube <img src="icons/youtube.png" alt="YouTube Icon"></a></li>
+        <li><a href="https://www.facebook.com/profile/ytsentralt" target="_blank">Facebook <img src="icons/facebook.png" alt="Facebook Icon"></a></li>
+        <li><a href="https://www.instagram.com/ytsentralt" target="_blank">Instagram <img src="icons/instagram.png" alt="Instagram Icon"></a></li>
     </ul>
-</div>
-<div class="container" id="glow-container">
-    <span class="glow-text">Check Out More</span>
 </div>
 </body>
 </html>

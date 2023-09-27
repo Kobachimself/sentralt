@@ -9,17 +9,13 @@ body {
   color: white; /* Hvit tekstfarge */
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 .container {
   display: inline-block;
   padding: 20px;
   border: 2px solid #333; /* Mørkegrå ramme */
   border-radius: 10px; /* Avrundede kanter */
   transition: box-shadow 0.3s ease; /* Overgang for glød-effekten */
+  margin-bottom: 20px;
 }
 
 .container:hover {
@@ -29,4 +25,24 @@ body {
 .glow-text {
   font-size: 36px;
   color: pink; /* Rosa tekstfarge */
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer li a img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
 }
