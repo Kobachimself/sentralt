@@ -13,41 +13,49 @@ body {
     color: white;
 }
 
-.container {
-    display: inline-block;
+.social-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-info {
+    width: 200px;
     padding: 20px;
+    margin: 20px;
     border: 2px solid #333;
     border-radius: 10px;
-    transition: box-shadow 0.3s ease;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-.container:hover {
-    box-shadow: 0 0 20px pink; /* Increased glow */
-}
-
-.glow-text {
-    font-size: 36px;
-    color: pink;
-}
-
-.footer {
     text-align: center;
-    margin: 10px 0;
-    display: none;
+    box-shadow: 0 0 10px pink;
 }
 
-.footer ul.social-media {
-    list-style: none;
-    padding: 0;
+.social-info p {
+    font-size: 14px;
+}
+
+.social-header {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.footer ul.social-media li {
+.social-header h2 {
     margin-right: 10px;
 }
 
-.footer ul.social-media li:last-child {
-    margin-right: 0;
+.social-header a img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px pink;
+}
+
+.social-info:hover {
+    box-shadow: 0 0 20px pink; /* Increased glow */
+}
+
+/* Additional styles for descriptions */
+.social-info p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
 }
