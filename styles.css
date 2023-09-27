@@ -7,25 +7,19 @@ body {
   align-items: center;
 }
 
-.centered-text {
-  text-align: center;
+.container {
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid #333; /* Mørkegrå ramme */
+  border-radius: 10px; /* Avrundede kanter */
+  transition: box-shadow 0.3s ease; /* Overgang for glød-effekten */
+}
+
+.container:hover {
+  box-shadow: 0 0 10px pink; /* Glød-effekt når musepekeren er over */
 }
 
 .glow-text {
   font-size: 36px;
   color: pink; /* Rosa tekstfarge */
-  text-shadow: 0 0 10px pink; /* Glow-effekt */
-  animation: bounce 2s infinite; /* Bruk animasjonen på teksten */
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
 }
