@@ -59,3 +59,23 @@ body {
     color: #333;
     margin-bottom: 10px;
 }
+@keyframes hoverAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.social-info:hover {
+    box-shadow: 0 0 20px pink; /* Increased glow */
+    animation: hoverAnimation 0.5s ease;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: perspective(500px);
+    cursor: pointer;
+}
