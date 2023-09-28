@@ -11,44 +11,38 @@
     <div class="social-info">
         <div class="social-header">
             <h2>Twitter</h2>
-            <a href="https://twitter.com/ytsentralt" target="_blank"><img src="icons/twitter.png" alt="Twitter Icon"></a>
         </div>
         <p>🎮 Fortnite Player | In-Game Name: Sentralt | Building Victory Royales 🏆 | Exploring the Fortnite universe, one Victory Royale at a time! 🌌 |</p>
     </div>
     <div class="social-info">
         <div class="social-header">
             <h2>Twitch</h2>
-            <a href="https://www.twitch.tv/ytsentralt" target="_blank"><img src="icons/twitch.png" alt="Twitch Icon"></a>
         </div>
         <p>Hey there, fellow gamers! 🎮 I'm Mariell Berntzen, but you can call me SENTRALT. I'm a Fortnite aficionado 🏹, and I can't wait to share my gaming journey with you. Let's conquer the island and have some epic Fortnite adventures together! 🔥</p>
     </div>
     <div class="social-info">
         <div class="social-header">
             <h2>YouTube</h2>
-            <a href="https://www.youtube.com/@sentralt" target="_blank"><img src="icons/youtube.png" alt="YouTube Icon"></a>
         </div>
         <p>🎮 Fortnite Player | In-Game Name: Sentralt | Building Victory Royales 🏆 | Exploring the Fortnite universe, one Victory Royale at a time! 🌌 |</p>
     </div>
     <div class="social-info">
         <div class="social-header">
             <h2>Facebook</h2>
-            <a href="https://www.facebook.com/profile/ytsentralt" target="_blank"><img src="icons/facebook.png" alt="Facebook Icon"></a>
         </div>
         <p>🎮 Fortnite Player | In-Game Name: Sentralt | Building Victory Royales 🏆 | Exploring the Fortnite universe, one Victory Royale at a time! 🌌 |</p>
     </div>
     <div class="social-info">
         <div class="social-header">
             <h2>Instagram</h2>
-            <a href="https://www.instagram.com/sentralt.07/" target="_blank"><img src="icons/instagram.png" alt="Instagram Icon"></a>
         </div>
         <p>Digital creator Hey🎮 I'm Mariell, but you can call me SENTRALT. Let's start our journey with you all. Let's conquer the island and have some epic moments</p>
     </div>
     <div class="social-info">
         <div class="social-header">
-            <h2>PayPal/Donation</h2>
-            <a href="https://paypal.me/sentralt" target="_blank"><img alt="PayPal/Donation Icon" src=""></a>
+            <h2>PayPal</h2>
         </div>
-        <p>Support us through PayPal! Any amount is appreciated. 😊</p>
+        <p>Support me through PayPal! Any amount is appreciated. 😊</p>
     </div>
 </div>
 
@@ -75,10 +69,18 @@
             case 'PayPal/Donation':
                 link = 'https://paypal.me/sentralt';
                 break;
+            case 'More':
+                link = 'socials.html';  // Change this to the desired page
+                break;
             default:
                 link = '#'; // Default case
         }
-        window.open(link, '_blank');
+
+        if (platform === 'More') {
+            window.location.href = link;  // Redirect to the specified page
+        } else {
+            window.open(link, '_blank');  // Open in a new tab
+        }
     }
 
     // Add event listeners to all social media icons
