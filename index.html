@@ -9,27 +9,94 @@
 <body>
 <div class="social-container">
     <div class="social-info">
-        <h2>Twitter</h2>
+        <div class="social-header">
+            <h2>Twitter</h2>
+            <a href="https://twitter.com/ytsentralt" target="_blank"><img src="icons/twitter.png" alt="Twitter Icon"></a>
+        </div>
         <p>🎮 Fortnite Player | In-Game Name: Sentralt | Building Victory Royales 🏆 | Exploring the Fortnite universe, one Victory Royale at a time! 🌌 |</p>
     </div>
     <div class="social-info">
-        <h2>Twitch</h2>
+        <div class="social-header">
+            <h2>Twitch</h2>
+            <a href="https://www.twitch.tv/ytsentralt" target="_blank"><img src="icons/twitch.png" alt="Twitch Icon"></a>
+        </div>
         <p>Hey there, fellow gamers! 🎮 I'm Mariell Berntzen, but you can call me SENTRALT. I'm a Fortnite aficionado 🏹, and I can't wait to share my gaming journey with you. Let's conquer the island and have some epic Fortnite adventures together! 🔥</p>
     </div>
     <div class="social-info">
-        <h2>YouTube</h2>
+        <div class="social-header">
+            <h2>YouTube</h2>
+            <a href="https://www.youtube.com/@sentralt" target="_blank"><img src="icons/youtube.png" alt="YouTube Icon"></a>
+        </div>
         <p>🎮 Fortnite Player | In-Game Name: Sentralt | Building Victory Royales 🏆 | Exploring the Fortnite universe, one Victory Royale at a time! 🌌 |</p>
     </div>
     <div class="social-info">
-        <h2>Facebook</h2>
+        <div class="social-header">
+            <h2>Facebook</h2>
+            <a href="https://www.facebook.com/profile/ytsentralt" target="_blank"><img src="icons/facebook.png" alt="Facebook Icon"></a>
+        </div>
         <p>🎮 Fortnite Player | In-Game Name: Sentralt | Building Victory Royales 🏆 | Exploring the Fortnite universe, one Victory Royale at a time! 🌌 |</p>
     </div>
     <div class="social-info">
-        <h2>Instagram</h2>
-        <p>
-            Hey🎮 I'm Mariell, but you can call me SENTRALT.
-            Let's start our journey with you all. Let's conquer the island and have some epic moments</p>
+        <div class="social-header">
+            <h2>Instagram</h2>
+            <a href="https://www.instagram.com/sentralt.07/" target="_blank"><img src="icons/instagram.png" alt="Instagram Icon"></a>
+        </div>
+        <p>Digital creator Hey🎮 I'm Mariell, but you can call me SENTRALT. Let's start our journey with you all. Let's conquer the island and have some epic moments</p>
+    </div>
+    <div class="social-info">
+        <div class="social-header">
+            <h2>PayPal/Donation</h2>
+            <a href="https://paypal.me/sentralt" target="_blank"><img alt="PayPal/Donation Icon" src=""></a>
+        </div>
+        <p>Support us through PayPal! Any amount is appreciated. 😊</p>
     </div>
 </div>
+
+<script>
+    // Function to open the correct link based on the platform
+    function openLink(platform) {
+        let link;
+        switch (platform) {
+            case 'Twitter':
+                link = 'https://twitter.com/ytsentralt';
+                break;
+            case 'Twitch':
+                link = 'https://www.twitch.tv/ytsentralt';
+                break;
+            case 'YouTube':
+                link = 'https://www.youtube.com/@sentralt';
+                break;
+            case 'Facebook':
+                link = 'https://www.facebook.com/profile/ytsentralt';
+                break;
+            case 'Instagram':
+                link = 'https://www.instagram.com/sentralt.07/';
+                break;
+            case 'PayPal/Donation':
+                link = 'https://paypal.me/sentralt';
+                break;
+            default:
+                link = '#'; // Default case
+        }
+        window.open(link, '_blank');
+    }
+
+    // Add event listeners to all social media icons
+    document.querySelectorAll('.social-info').forEach((element) => {
+        element.addEventListener('click', () => {
+            const platform = element.querySelector('h2').innerText;
+            openLink(platform);
+        });
+
+        element.addEventListener('mouseover', () => {
+            element.style.backgroundColor = 'rgba(66, 134, 244, 0.3)';
+        });
+
+        element.addEventListener('mouseout', () => {
+            element.style.backgroundColor = 'transparent';
+        });
+    });
+</script>
+
 </body>
 </html>

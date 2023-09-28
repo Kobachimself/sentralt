@@ -79,3 +79,10 @@ body {
     transform: perspective(500px);
     cursor: pointer;
 }
+/* Add styles for the PayPal/Donation section */
+.social-info:nth-child(odd) {
+    background-color: rgba(66, 134, 244, 0.3);
+}
+
+.social-info:nth-child(odd):hover {
+    background-color: rgba(66, 134, 244, 0.5);
