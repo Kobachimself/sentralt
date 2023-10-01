@@ -61,8 +61,22 @@
   <div class="social-header">
     <h2>Vipps</h2>
   </div>
-  <p>Support me through Vipps! Any amount is appreciated. 😊</p>
+  <h2>Vipps</h2>
 </div>
+<p>Support me through Vipps! Any amount is appreciated. 😊</p>
+
+<script>
+    function openVipps() {
+        const vippURL = 'vipps://vipp?amount=0&receiverId=40886048';
+        window.location.href = vippURL;
+    }
+
+    // Add event listener for Vipps
+    const vippsElement = document.querySelector('.social-info h2:nth-child(6)');
+    vippsElement.style.cursor = 'pointer'; // Ensure the cursor changes to a hand on hover
+    vippsElement.addEventListener('click', () => {
+        openVipps();
+    });
 
 <script>
     // Function to open the correct link based on the platform
