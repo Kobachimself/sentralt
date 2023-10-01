@@ -82,15 +82,17 @@ document.querySelectorAll('.social-info').forEach((element) => {
     element.addEventListener('mouseout', () => {
         element.style.backgroundColor = 'transparent';
     });
- // Function to handle Vipps click
- <script>
+<script>
+    // Function to open the Vipps app with the specified parameters
     function openVipps() {
-        const vippURL = `vipps://vipp?amount=0&receiverId=40886048`;
+        const vippURL = 'vipps://vipp?amount=0&receiverId=40886048';
         window.location.href = vippURL;
     }
 
     // Add event listener for Vipps
-    document.querySelector('.social-info h2:nth-child(6)').addEventListener('click', () => {
+    const vippsElement = document.querySelector('.social-info h2:nth-child(6)');
+    vippsElement.style.cursor = 'pointer'; // Ensure the cursor changes to a hand on hover
+    vippsElement.addEventListener('click', () => {
         openVipps();
     });
 </script>
