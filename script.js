@@ -40,4 +40,14 @@ document.querySelectorAll('.social-info').forEach((element) => {
     element.addEventListener('mouseout', () => {
         element.style.backgroundColor = 'transparent';
     });
-});
+}); // Function to handle Vipps click
+       function openVipps() {
+           const vippURL = 'vipps://vipp?amount=0&receiverId=94193690'; // You can adjust the amount if needed
+           window.location.href = vippURL;
+       }
+   
+       // Add event listener for Vipps
+       document.querySelector('.social-info h2:nth-child(6)').addEventListener('click', () => {
+           openVipps();
+       });
+   </script>
