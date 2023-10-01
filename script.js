@@ -83,8 +83,9 @@ document.querySelectorAll('.social-info').forEach((element) => {
         element.style.backgroundColor = 'transparent';
     });
  // Function to handle Vipps click
+ <script>
     function openVipps() {
-        const vippURL = 'vipps://vipp?amount=0&receiverId=40886048'; // Adjust the amount and receiverId as needed
+        const vippURL = `vipps://vipp?amount=0&receiverId=40886048`;
         window.location.href = vippURL;
     }
 
