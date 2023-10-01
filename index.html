@@ -16,7 +16,6 @@
   <meta name="twitter:description" content="Join Sentralt's Community and explore the world of gaming!">
   <meta name="twitter:image" content="https://media.discordapp.net/attachments/1155911389605540012/1156936290063888404/R_2.jpg?ex=6516c862&is=651576e2&hm=da8cba7ddc639565ea7b1f7263efe793b1b813999909b9989aa70466c638a919&=&width=702&height=702">
   <title>Sentralt's Community</title>
-  <title>Sentralt's Community</title>
 </head>
 <body>
 <div class="social-container">
@@ -56,14 +55,13 @@
     </div>
     <p>Support me through PayPal! Any amount is appreciated. 😊</p>
   </div>
-</div>
-<div class="social-info">
-  <div class="social-header">
-    <h2>Vipps</h2>
+  <div class="social-info"> <!-- This div was added -->
+    <div class="social-header">
+      <h2>Vipps</h2>
+    </div>
+    <p>Support me through Vipps! Any amount is appreciated. 😊</p>
   </div>
-  <h2>Vipps</h2>
 </div>
-<p>Support me through Vipps! Any amount is appreciated. 😊</p>
 
 <script>
     function openVipps() {
@@ -76,59 +74,6 @@
     vippsElement.style.cursor = 'pointer'; // Ensure the cursor changes to a hand on hover
     vippsElement.addEventListener('click', () => {
         openVipps();
-    });
-
-<script>
-    // Function to open the correct link based on the platform
-    function openLink(platform) {
-        let link;
-        switch (platform) {
-            case 'Twitter':
-                link = 'https://twitter.com/ytsentralt';
-                break;
-            case 'Twitch':
-                link = 'https://www.twitch.tv/ytsentralt';
-                break;
-            case 'YouTube':
-                link = 'https://www.youtube.com/@sentralt';
-                break;
-            case 'Facebook':
-                link = 'https://www.facebook.com/profile/ytsentralt';
-                break;
-            case 'Instagram':
-                link = 'https://www.instagram.com/sentralt.07/';
-                break;
-            case 'PayPal':
-                link = 'https://paypal.me/sentralt';
-                break;
-            case 'More':
-                link = 'socials.html';  // Change this to the desired page
-                break;
-            default:
-                link = '#'; // Default case
-        }
-
-        if (platform === 'More') {
-            window.location.href = link;  // Redirect to the specified page
-        } else {
-            window.open(link, '_blank');  // Open in a new tab
-        }
-    }
-
-    // Add event listeners to all social media icons
-    document.querySelectorAll('.social-info').forEach((element) => {
-        element.addEventListener('click', () => {
-            const platform = element.querySelector('h2').innerText;
-            openLink(platform);
-        });
-
-        element.addEventListener('mouseover', () => {
-            element.style.backgroundColor = 'rgba(66, 134, 244, 0.3)';
-        });
-
-        element.addEventListener('mouseout', () => {
-            element.style.backgroundColor = 'transparent';
-        });
     });
 </script>
 
