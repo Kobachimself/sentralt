@@ -1,7 +1,9 @@
 function hoverEffect(element) {
   element.style.backgroundColor = 'rgba(66, 134, 244, 0.3)';
 }
-
+function goBack() {
+  window.history.back();
+}
 function removeHoverEffect(element) {
   element.style.backgroundColor = 'transparent';
 }
