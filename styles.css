@@ -1,126 +1,70 @@
+/* Add /* Add this to styles.css */
+
 body {
-    background-image: url('https://cdn.discordapp.com/attachments/1155911389605540012/1156663497833336913/R_2.jpg?ex=6515ca53&is=651478d3&hm=e5e772396e810123312c6a33a645dbff5b87196cb76766d233862fb0de14cdcc&');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://cdn.discordapp.com/attachments/1155911389605540012/1160897006521286708/IMG_9149.jpg?ex=65365496&is=6523df96&hm=3ddd6c91b84fd83b626d450430ba406f218298ed848e5c99051fe202ded54372');
+  background-size: cover;
 }
 
 .social-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
 .social-info {
-    width: 200px;
-    padding: 20px;
-    margin: 20px;
-    border: 2px solid #333;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px pink;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.social-info p {
-    font-size: 14px;
+.social-info:hover {
+  transform: scale(1.05);
 }
 
 .social-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .social-header h2 {
-    margin-right: 10px;
+  font-size: 24px;
 }
 
-.social-header a img {
-    border-radius: 50%;
-    box-shadow: 0 0 10px pink;
-}
-
-.social-info:hover {
-    box-shadow: 0 0 20px pink; /* Increased glow */
-}
-
-/* Additional styles for descriptions */
 .social-info p {
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 10px;
-}
-@keyframes hoverAnimation {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.social-info:hover {
-    box-shadow: 0 0 20px pink; /* Increased glow */
-    animation: hoverAnimation 0.5s ease;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: perspective(500px);
-    cursor: pointer;
-}
-/* Add styles for the PayPal/Donation section */
-.social-info:nth-child(odd) {
-    background-color: rgba(66, 134, 244, 0.3);
-}
-
-.social-info:nth-child(odd):hover {
-    background-color: rgba(66, 134, 244, 0.5);
-    .navbar {
+.navbar {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #222;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item {
-  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .nav-item a {
+  color: #fff;
   text-decoration: none;
-  color: #000;
+  font-size: 18px;
 }
 
 .nav-item a:hover {
-  text-decoration: underline;
+  color: #66d9ff;
 }
 
-/* Hover effect */
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px rgba(66, 134, 244, 0.8);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(66, 134, 244, 0.8);
-  }
-  100% {
-    box-shadow: 0 0 5px rgba(66, 134, 244, 0.8);
-  }
-}
-
-function hoverEffect(element) {
-  element.style.animation = 'glow 1s infinite alternate';
-}
-
-function removeHoverEffect(element) {
-  element.style.animation = '';
+.nav-item:hover {
+  transform: scale(1.05);
 }
