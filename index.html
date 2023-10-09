@@ -6,15 +6,6 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Add the website's icon (favicon) -->
   <link rel="icon" href="https://media.discordapp.net/attachments/1155911389605540012/1156936290063888404/R_2.jpg?ex=6516c862&is=651576e2&hm=da8cba7ddc639565ea7b1f7263efe793b1b813999909b9989aa70466c638a919&=&width=702&height=702" type="image/jpg">
-  <!-- Open Graph Protocol meta tags for better sharing -->
-  <meta property="og:title" content="Sentralt's Community">
-  <meta property="og:description" content="Join Sentralt's Community and explore the world of gaming!">
-  <meta property="og:image" content="https://media.discordapp.net/attachments/1155911389605540012/1156936290063888404/R_2.jpg?ex=6516c862&is=651576e2&hm=da8cba7ddc639565ea7b1f7263efe793b1b813999909b9989aa70466c638a919&=&width=702&height=702">
-  <meta property="og:url" content="YOUR_WEBSITE_URL">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sentralt's Community">
-  <meta name="twitter:description" content="Join Sentralt's Community and explore the world of gaming!">
-  <meta name="twitter:image" content="https://media.discordapp.net/attachments/1155911389605540012/1156936290063888404/R_2.jpg?ex=6516c862&is=651576e2&hm=da8cba7ddc639565ea7b1f7263efe793b1b813999909b9989aa70466c638a919&=&width=702&height=702">
   <title>Sentralt's Community</title>
 </head>
 <body>
@@ -24,123 +15,17 @@
     <a href="#">Home</a>
   </div>
   <div class="nav-item" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">
-    <a href="#">Socials</a>
+    <a href="socials-update.html">Socials</a>
   </div>
   <div class="nav-item" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">
-    <a href="#">Community</a>
+    <a href="community.html">Community</a>
   </div>
 </nav>
 
 <div class="social-container">
-  <div class="social-info">
-    <div class="social-header">
-      <h2>Twitter</h2>
-    </div>
-    <p>🎮 Fortnite Player | In-Game Name: Sentralt | Building Victory Royales 🏆 | Exploring the Fortnite universe, one Victory Royale at a time! 🌌 |</p>
-  </div>
-  <div class="social-info">
-    <div class="social-header">
-      <h2>Twitch</h2>
-    </div>
-    <p>Hey there, fellow gamers! 🎮 I'm Mariell Berntzen, but you can call me SENTRALT. I'm a Fortnite aficionado 🏹, and I can't wait to share my gaming journey with you. Let's conquer the island and have some epic Fortnite adventures together! 🔥</p>
-  </div>
-  <div class="social-info">
-    <div class="social-header">
-      <h2>YouTube</h2>
-    </div>
-    <p>🎮 Fortnite Player | In-Game Name: Sentralt | Building Victory Royales 🏆 | Exploring the Fortnite universe, one Victory Royale at a time! 🌌 |</p>
-  </div>
-  <div class="social-info">
-    <div class="social-header">
-      <h2>Facebook</h2>
-    </div>
-    <p>🎮 Fortnite Player | In-Game Name: Sentralt | Building Victory Royales 🏆 | Exploring the Fortnite universe, one Victory Royale at a time! 🌌 |</p>
-  </div>
-  <div class="social-info">
-    <div class="social-header">
-      <h2>Instagram</h2>
-    </div>
-    <p>Digital creator Hey🎮 I'm Mariell, but you can call me SENTRALT. Let's start our journey with you all. Let's conquer the island and have some epic moments</p>
-  </div>
-  <div class="social-info">
-    <div class="social-header">
-      <h2>PayPal</h2>
-    </div>
-    <p>Support me through PayPal! Any amount is appreciated. 😊
-      </p>
-  </div>
-  <div class="social-info">
-    <div class="social-header">
-      <h2>Vipps</h2>
-    </div>
-    <p>Support me through Vipps! Any amount is appreciated. 😊 <a href="javascript:openVipps();">Pay with Vipps</a></p>
-  </div>
+  <!-- Your social info here -->
 </div>
-<script>
-  function openVipps() {
-    const vippURL = 'vipps://vipp?amount=0&receiverId=40886048';
-    window.location.href = vippURL;
-  }
 
-  // Add event listener for Vipps
-  const vippsElement = document.querySelector('.social-info h2:nth-child(6)');
-  vippsElement.style.cursor = 'pointer'; // Ensure the cursor changes to a hand on hover
-  vippsElement.addEventListener('click', () => {
-    openVipps();
-  });
-
-  // Function to open the correct link based on the platform
-  function openLink(platform) {
-    let link;
-    switch (platform) {
-      case 'Twitter':
-        link = 'https://twitter.com/ytsentralt';
-        break;
-      case 'Twitch':
-        link = 'https://www.twitch.tv/ytsentralt';
-        break;
-      case 'YouTube':
-        link = 'https://www.youtube.com/channel/UCpawSZMyYJ3T3HR5I8yg33oQ';
-        break;
-      case 'Facebook':
-        link = 'https://www.facebook.com/profile/ytsentralt';
-        break;
-      case 'Instagram':
-        link = 'https://www.instagram.com/sentralt.07/';
-        break;
-      case 'PayPal':
-        link = 'https://paypal.me/sentralt';
-        break;
-      case 'Vipps':
-        openVipps();
-        return; // Stop here to prevent opening a new tab
-      default:
-        link = '#'; // Default case
-    }
-
-    if (platform === 'More') {
-      link = 'socials.html';  // Change this to the desired page
-    }
-
-    window.open(link, '_blank');  // Open in a new tab
-  }
-
-  // Add event listeners to all social media icons
-  document.querySelectorAll('.social-info').forEach((element) => {
-    element.addEventListener('click', () => {
-      const platform = element.querySelector('h2').innerText;
-      openLink(platform);
-    });
-
-    element.addEventListener('mouseover', () => {
-      element.style.backgroundColor = 'rgba(66, 134, 244, 0.3)';
-    });
-
-    element.addEventListener('mouseout', () => {
-      element.style.backgroundColor = 'transparent';
-    });
-  });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
-```
