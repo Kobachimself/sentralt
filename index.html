@@ -18,6 +18,19 @@
   <title>Sentralt's Community</title>
 </head>
 <body>
+
+<nav class="navbar">
+  <div class="nav-item" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">
+    <a href="#">Home</a>
+  </div>
+  <div class="nav-item" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">
+    <a href="#">Socials</a>
+  </div>
+  <div class="nav-item" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">
+    <a href="#">Community</a>
+  </div>
+</nav>
+
 <div class="social-container">
   <div class="social-info">
     <div class="social-header">
@@ -53,7 +66,8 @@
     <div class="social-header">
       <h2>PayPal</h2>
     </div>
-    <p>Support me through PayPal! Any amount is appreciated. 😊</p>
+    <p>Support me through PayPal! Any amount is appreciated. 😊
+      </p>
   </div>
   <div class="social-info">
     <div class="social-header">
@@ -62,7 +76,6 @@
     <p>Support me through Vipps! Any amount is appreciated. 😊 <a href="javascript:openVipps();">Pay with Vipps</a></p>
   </div>
 </div>
-
 <script>
   function openVipps() {
     const vippURL = 'vipps://vipp?amount=0&receiverId=40886048';
@@ -128,6 +141,6 @@
     });
   });
 </script>
-
 </body>
 </html>
+```
