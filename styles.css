@@ -86,3 +86,41 @@ body {
 
 .social-info:nth-child(odd):hover {
     background-color: rgba(66, 134, 244, 0.5);
+    .navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+/* Hover effect */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(66, 134, 244, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(66, 134, 244, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(66, 134, 244, 0.8);
+  }
+}
+
+function hoverEffect(element) {
+  element.style.animation = 'glow 1s infinite alternate';
+}
+
+function removeHoverEffect(element) {
+  element.style.animation = '';
+}
